@@ -6,12 +6,12 @@ module.exports = ({ env }) => [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
+          "connect-src": ["'self'", "http:"],
           "img-src": [
             "'self'",
             "data:",
             "blob:",
-            `https://${env("AWS_BUCKET_NAME")}.s3.${env(
+            `https://${env("AWS_BUCKET")}.s3.${env(
               "AWS_REGION"
             )}.amazonaws.com`,
           ],
@@ -19,7 +19,7 @@ module.exports = ({ env }) => [
             "'self'",
             "data:",
             "blob:",
-            `https://${env("AWS_BUCKET_NAME")}.s3.${env(
+            `https://${env("AWS_BUCKET")}.s3.${env(
               "AWS_REGION"
             )}.amazonaws.com`,
           ],
