@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apartments",
+  "info": {
+    "singularName": "apartment",
+    "pluralName": "apartments",
+    "displayName": "Apartments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Location": {
+      "type": "string"
+    },
+    "Area": {
+      "type": "float"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "floor": {
+      "type": "integer"
+    },
+    "room": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "photos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
