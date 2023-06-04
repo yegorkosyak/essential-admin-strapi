@@ -6,7 +6,7 @@ module.exports = ({ env }) => [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "http:"],
+          "connect-src": ["'self'", "https:"],
           "img-src": [
             "'self'",
             "data:",
